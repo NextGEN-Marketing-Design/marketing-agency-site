@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Build Your Premium Brand</title>
+    <style>
+        /* Modern Dark Theme Styling */
+        body {
+            background-color: #0b0f19; /* Matching your screenshot background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .custom-contact-form {
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            background: #111827; /* Deep dark container */
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+        }
+
+        .form-title {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #9ca3af; /* Light gray text color */
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #eab308; /* Golden border focus matching your button style */
+            background: #111827;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #eab308; /* Golden yellow color from your screenshot button */
+            border: none;
+            border-radius: 30px; /* Rounded button design */
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #ca8a04;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://web3forms.com" method="POST" class="custom-contact-form">
+        <!-- Replace with your actual Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+        <div class="form-title">Get In Touch</div>
+
+        <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="WhatsApp_Number" placeholder="e.g. +1 234 567 890" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email_Address" placeholder="e.g. client@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Purpose of Contact</label>
+            <textarea id="message" name="Purpose_of_Contact" rows="5" placeholder="Please describe your requirements or business goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+    </form>
+
+</body>
+</html>
